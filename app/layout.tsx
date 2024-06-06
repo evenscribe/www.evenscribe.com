@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 
 const inter = FontSans({
   subsets: ["latin"],
@@ -30,9 +31,10 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <div className="block dark:hidden absolute inset-0 -z-100 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]" />
-          <div className="hidden dark:block absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
+          <div className="hidden dark:block absolute top-0 -z-100 h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
           <SiteHeader />
           {children}
+          <SiteFooter />
         </ThemeProvider>
       </body>
     </html>
