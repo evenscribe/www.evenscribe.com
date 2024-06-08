@@ -86,12 +86,8 @@ export function MobileNav() {
             {urls.map(
               (item) =>
                 item.href && (
-                  <div className="flex items-center space-x-2">
-                    <MobileLink
-                      key={item.href}
-                      href={item.href}
-                      onOpenChange={setOpen}
-                    >
+                  <div className="flex items-center space-x-2" key={item.href}>
+                    <MobileLink href={item.href} onOpenChange={setOpen}>
                       {item.title}
                     </MobileLink>
                     {item.isExternal && (
