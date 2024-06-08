@@ -38,7 +38,7 @@ export default function Features() {
             </CardHeader>
             <CardContent>
               <div className="md:text-2xl mb-2 font-bold">
-                Setup your Logging Database
+                Bring your Own Database
               </div>
               <p className="md:text-s text-muted-foreground">
                 Flexibility at its finest—integrate with your preferred

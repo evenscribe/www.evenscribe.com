@@ -3,5 +3,6 @@ export const siteConfig = {
   links: {
     github: "https://www.github.com/evenscribe",
     x: "https://www.x.com/evenscribe",
+    tally: "https://tally.so/r/wg5kMJ",
   },
 };
