@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://evenscribe.com",
+    canonical: "https://www.evenscribe.com",
   },
 };
 
