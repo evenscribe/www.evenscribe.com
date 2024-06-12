@@ -27,13 +27,28 @@ export function MainNav() {
         </span>
       </Link>
       <nav className="flex items-center gap-4 text-sm lg:gap-6">
-        {/* <Link */}
-        {/*   href="/docs" */}
-        {/*   className={cn( */}
-        {/*     "transition-colors hover:text-foreground/80", */}
-        {/*     pathname === "/docs" ? "text-foreground" : "text-foreground/60", */}
-        {/*   )} */}
-        {/* > */}
+        <Link
+          href="/legal/tos"
+          className={cn(
+            "transition-colors hover:text-foreground/80",
+            pathname === "/legal/tos"
+              ? "text-foreground"
+              : "text-foreground/60",
+          )}
+        >
+          <p>Terms of Services</p>
+        </Link>
+        <Link
+          href="/legal/privacy-policy"
+          className={cn(
+            "transition-colors hover:text-foreground/80",
+            pathname === "/legal/privacy-policy"
+              ? "text-foreground"
+              : "text-foreground/60",
+          )}
+        >
+          <p>Privacy Policy</p>
+        </Link>
         {/*   <div className="flex items-center space-x-2"> */}
         {/*     <p>Documentations</p> */}
         {/*     <ExternalLinkIcon /> */}

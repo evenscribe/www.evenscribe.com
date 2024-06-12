@@ -13,14 +13,19 @@ import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 const urls = [
   {
-    title: "Documentation",
-    href: "/docs",
-    isExternal: true,
-  },
-  {
     title: "GitHub",
     href: siteConfig.links.github,
     isExternal: true,
+  },
+  {
+    title: "Terms of Services",
+    href: "/legal/tos",
+    isExternal: false,
+  },
+  {
+    title: "Privacy Policy",
+    href: "/legal/privacy-policy",
+    isExternal: false,
   },
 ];
 
