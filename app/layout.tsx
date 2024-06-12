@@ -19,11 +19,6 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.evenscribe.com"),
-  openGraph: {
-    siteName: "Evenscribe - Tame your software logs",
-    type: "website",
-    locale: "en_US",
-  },
   robots: {
     index: true,
     follow: true,
@@ -38,18 +33,136 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     capable: true,
   },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+    ],
+    shortcut: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
+  },
+
+  keywords: [
+    "Evenscribe",
+    "software logs",
+    "log management",
+    "event data collection",
+    "user-friendly logging",
+    "intuitive log analysis",
+    "database integration",
+    "Clickhouse logging",
+    "OpenTelemetry logs",
+    "log interoperability",
+    "AI log summaries",
+    "log summaries with AI",
+    "customizable logging",
+    "logging system setup",
+    "logging database configuration",
+    "Evenscribe Write Node",
+    "language-specific logging client",
+    "Typescript logging",
+    "JavaScript logging",
+    "Go logging client",
+    "Rust logging client",
+    "log observatory",
+    "log analysis interface",
+    "early access logging solution",
+    "logging infrastructure solution",
+    "event log insights",
+    "monitor logs",
+    "advanced log analysis",
+    "streamline workflow with logs",
+    "secure logging solution",
+    "seamless event data collection",
+    "powerful log management tools",
+    "flexible database integration",
+    "OpenTelemetry compliance",
+    "RAG AI log summaries",
+    "quick log setup",
+    "efficient log monitoring",
+    "insightful log analysis",
+    "customizable log capture",
+    "simple logging configuration",
+    "logging client installation",
+    "server integration for logs",
+    "clear log insights",
+    "logging observatory interface",
+    "early adopter logging solution",
+    "GitHub integration for logging",
+    "Twitter updates on Evenscribe",
+    "Follow Evenscribe on X",
+    "logging data visualization",
+    "logging solution progress",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.evensribe.com",
+    title: "Effortless Logging Infrastructure | Evenscribe",
+    description:
+      "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
+    images: [
+      {
+        url: "https://www.evenscribe.com/cover.png",
+        width: 1200,
+        height: 630,
+        alt: "evenscribe",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Effortless Logging Infrastructure | Evenscribe",
+    description:
+      "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
+    creator: "@evenscribe",
+    site: "@evenscribe",
+    images: [
+      {
+        url: "https://www.evenscribe.com/cover.png",
+        width: 1200,
+        height: 630,
+        alt: "evenscribe",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.evenscribe.com",
+  },
 };
 
 const LDJSON = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Evenscribe",
-  alternateName: "Evenscribe Observatory",
+  headline: "Effortless Logging Infrastructure",
+  description:
+    "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
+  inLanguage: "en-US",
+  isFamilyFriendly: "true",
+  alternateName: "Evenscribe Logging Infrastructure",
   url: "https://www.evenscribe.com",
   logo: "https://www.evenscribe.com/hourglass.png",
   sameAs: [
     "https://www.x.com/evenscribe",
     "https://www.instagram.com/evenscribe",
+    "https://www.github.com/evenscribe",
   ],
 };
 
@@ -73,8 +186,6 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" disableTransitionOnChange>
-          <div className="block dark:hidden absolute inset-0 -z-100 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]" />
-          <div className="hidden dark:block absolute top-0 -z-100 h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
           <SiteHeader />
           {children}
           <SiteFooter />

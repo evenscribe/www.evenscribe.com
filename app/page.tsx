@@ -20,91 +20,48 @@ export const metadata: Metadata = {
   title: "Effortless Logging Infrastructure | Evenscribe",
   description:
     "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
-  keywords: [
-    "evenscribe",
-    "logging infrastructure",
-    "log management",
-    "easy setup",
-    "github sign in",
-    "opentelemetry",
-    "telemetry",
-    "database integration",
-    "log analysis",
-    "observability",
-    "ai",
-    "rag ai",
-    "log summaries",
-    "customizable logging",
-  ],
-  openGraph: {
-    url: "https://www.evensribe.com",
-    type: "website",
-    title: "Effortless Logging Infrastructure | Evenscribe",
-    description:
-      "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
-    images: [
-      {
-        url: "https://www.evenscribe.com/cover.png",
-        width: 1200,
-        height: 630,
-        alt: "evenscribe",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Effortless Logging Infrastructure | Evenscribe",
-    description:
-      "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
-    creator: "@evenscribe",
-    site: "@evenscribe",
-    images: [
-      {
-        url: "https://www.evenscribe.com/cover.png",
-        width: 1200,
-        height: 630,
-        alt: "evenscribe",
-      },
-    ],
-  },
-  alternates: {
-    canonical: "https://www.evenscribe.com",
-  },
 };
 
 export default function IndexPage() {
   return (
-    <div className="container relative">
-      <PageHeader>
-        <Announcement />
-        <PageHeaderHeading>Tame your software logs</PageHeaderHeading>
-        <PageHeaderDescription>
-          Seamlessly collect, search, and make sense of your event data.
-          User-friendly and intuitive yet powerful.
-        </PageHeaderDescription>
-        <PageActions>
-          <Link href={siteConfig.links.tally} className={cn(buttonVariants())}>
-            Be an early adopter
-          </Link>
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href={siteConfig.links.github}
-            className={cn(buttonVariants({ variant: "outline" }))}
-          >
-            <Icons.gitHub className="mr-2 h-4 w-4 fill-current" />
-            GitHub
-          </Link>
-        </PageActions>
-      </PageHeader>
+    <>
+      <div className="block dark:hidden absolute inset-0 -z-100 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]" />
+      <div className="hidden dark:block absolute top-0 -z-100 h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
+      <div className="container relative">
+        <PageHeader>
+          <Announcement />
+          <PageHeaderHeading>Tame your software logs</PageHeaderHeading>
+          <PageHeaderDescription>
+            Seamlessly collect, search, and make sense of your event data.
+            User-friendly and intuitive yet powerful.
+          </PageHeaderDescription>
+          <PageActions>
+            <Link
+              href={siteConfig.links.tally}
+              className={cn(buttonVariants())}
+            >
+              Be an early adopter
+            </Link>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href={siteConfig.links.github}
+              className={cn(buttonVariants({ variant: "outline" }))}
+            >
+              <Icons.gitHub className="mr-2 h-4 w-4 fill-current" />
+              GitHub
+            </Link>
+          </PageActions>
+        </PageHeader>
 
-      <Mockup />
+        <Mockup />
 
-      <Features />
+        <Features />
 
-      <QuickStart />
+        <QuickStart />
 
-      <GetStarted />
-    </div>
+        <GetStarted />
+      </div>
+    </>
   );
 }
