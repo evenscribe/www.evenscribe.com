@@ -33,30 +33,6 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     capable: true,
   },
-  icons: {
-    icon: [
-      {
-        url: "/favicon.ico",
-        type: "image/x-icon",
-      },
-      {
-        url: "/favicon-16x16.png",
-        sizes: "16x16",
-        type: "image/png",
-      },
-      {
-        url: "/favicon-32x32.png",
-        sizes: "32x32",
-        type: "image/png",
-      },
-    ],
-    shortcut: [
-      {
-        url: "/favicon.ico",
-        type: "image/x-icon",
-      },
-    ],
-  },
 
   keywords: [
     "Evenscribe",
@@ -145,6 +121,24 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.evenscribe.com",
   },
+
+  icons: [
+    {
+      url: "https://www.evenscribe.com/android-chrome-192x192.png",
+      sizes: "192x192",
+      type: "image/png",
+    },
+    {
+      url: "https://www.evenscribe.com/android-chrome-384x384.png",
+      sizes: "384x384",
+      type: "image/png",
+    },
+    {
+      url: "https://www.evenscribe.com/android-chrome-512x512.png",
+      sizes: "512x512",
+      type: "image/png",
+    },
+  ],
 };
 
 const LDJSON = {
