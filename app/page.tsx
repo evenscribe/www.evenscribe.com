@@ -17,9 +17,9 @@ import Features from "@/components/features";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Effortless Logging Infrastructure | Evenscribe",
+  title: "Evenscribe | Intuitive Log Management",
   description:
-    "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
+    "Seamlessly collect, search, and make sense of your event data. User-friendly and intuitive yet powerful.",
 };
 
 export default function IndexPage() {

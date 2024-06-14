@@ -34,6 +34,38 @@ export const metadata: Metadata = {
     capable: true,
   },
 
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+    ],
+    shortcut: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
+    apple: [
+      {
+        url: "/apple-icon.png",
+        sizes: "any",
+        type: "image/png",
+      },
+    ],
+  },
+
   keywords: [
     "Evenscribe",
     "software logs",
@@ -90,6 +122,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.evensribe.com",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     title: "Effortless Logging Infrastructure | Evenscribe",
     description:
       "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
@@ -101,28 +140,17 @@ export const metadata: Metadata = {
       "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
     creator: "@evenscribe",
     site: "@evenscribe",
+    images: [
+      {
+        url: "/twitter-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   alternates: {
-    canonical: "https://www.evenscribe.com",
+    canonical: "https://evenscribe.com",
   },
-
-  icons: [
-    {
-      url: "https://www.evenscribe.com/android-chrome-192x192.png",
-      sizes: "192x192",
-      type: "image/png",
-    },
-    {
-      url: "https://www.evenscribe.com/android-chrome-384x384.png",
-      sizes: "384x384",
-      type: "image/png",
-    },
-    {
-      url: "https://www.evenscribe.com/android-chrome-512x512.png",
-      sizes: "512x512",
-      type: "image/png",
-    },
-  ],
 };
 
 const LDJSON = {
