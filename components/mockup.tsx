@@ -10,14 +10,14 @@ export default function Mockup() {
           src="/mockup-light.webp"
           width={3528}
           height={3274}
-          className="h-auto w-[80vw] md:w-[70vw] block dark:hidden"
+          className="h-auto mx-auto w-[80vw] md:w-[70vw] block dark:hidden"
         />
         <Image
           alt="hero"
           src="/mockup-dark.webp"
           width={3528}
           height={3274}
-          className="h-auto w-[90vw] md:w-[70vw] hidden dark:block"
+          className="h-auto w-[90vw] mx-auto md:w-[70vw] hidden dark:block"
         />
       </CardContent>
     </Card>
