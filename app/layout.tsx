@@ -93,14 +93,6 @@ export const metadata: Metadata = {
     title: "Effortless Logging Infrastructure | Evenscribe",
     description:
       "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
-    images: [
-      {
-        url: "https://www.evenscribe.com/cover.png",
-        width: 1200,
-        height: 630,
-        alt: "evenscribe",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -109,14 +101,6 @@ export const metadata: Metadata = {
       "Streamline your logging infrastructure with Evenscribe. Follow our easy setup steps, leverage advanced features, and gain insights effortlessly.",
     creator: "@evenscribe",
     site: "@evenscribe",
-    images: [
-      {
-        url: "https://www.evenscribe.com/cover.png",
-        width: 1200,
-        height: 630,
-        alt: "evenscribe",
-      },
-    ],
   },
   alternates: {
     canonical: "https://www.evenscribe.com",
