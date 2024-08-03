@@ -37,7 +37,7 @@ export default function IndexPage() {
           </PageHeaderDescription>
           <PageActions>
             <Link
-              href={siteConfig.links.tally}
+              href={siteConfig.links.product}
               className={cn(buttonVariants())}
             >
               Be an early adopter
