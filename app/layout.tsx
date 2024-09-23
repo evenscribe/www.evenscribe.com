@@ -1,15 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 
-const inter = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -148,9 +145,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  alternates: {
-    canonical: "https://evenscribe.com",
-  },
 };
 
 const LDJSON = {
@@ -188,13 +182,24 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          inter.variable,
+          GeistSans.variable, GeistMono.variable,
         )}
       >
         <ThemeProvider attribute="class" disableTransitionOnChange>
-          <SiteHeader />
-          {children}
-          <SiteFooter />
+          <div className="relative">
+            <div
+              className="absolute inset-0 blur-xl h-[580px]"
+              style={{
+                background:
+                  "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(232, 121, 249, 0.26) 40.92%, rgba(204, 171, 238, 0) 70.35%)",
+              }}
+            ></div>
+            <div className="relative">
+              <SiteHeader />
+              {children}
+              <SiteFooter />
+            </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>
